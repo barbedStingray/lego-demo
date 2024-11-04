@@ -61,7 +61,7 @@
 .storeHours {
   /* border: 2px solid red; */
   width: 75%;
-  padding: 3dvh 0 8dvh 0;
+  padding: 3dvh 0 9dvh 0;
   gap: 1.5dvh;
 }
 .holidayHours {
@@ -88,7 +88,7 @@
 .storeContainer {
   background-color: var(--blue);
   width: 100%;
-  padding: 8dvh 0 5dvh 0;
+  padding: 9dvh 0 9dvh 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -112,4 +112,39 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
+}
+
+
+
+
+.events {
+  border: 2px solid var(--red);
+  background-color: var(--red);
+  width: 40%;
+  height: 7dvh;
+  margin-top: -3.5dvh;
+  margin-bottom: -3.5dvh;
+  z-index: 10;
+  font-size: 2.5dvh;
+  color: #efefef;
+}
+
+.socialDetails {
+  width: 100%;
+  background-color: var(--yellow);
+  height: 30dvh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2dvh;
+}
+
+.connectionPortals {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2dvh;
+  font-size: 5.5dvh;
 }

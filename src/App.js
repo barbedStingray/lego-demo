@@ -5,6 +5,14 @@ import batman from './Photos/vacationBatman.jpg'
 import pirates from './Photos/pirates.jpg'
 import superman from './Photos/superman.jpg'
 
+import { FaYoutube } from "react-icons/fa";
+import { FaTwitch } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
+
+
 function App() {
 
 
@@ -52,9 +60,17 @@ function App() {
       </div>
 
 
+      <button className='events'>View Events</button>
 
-      <div>
-        <p>Check out our Upcomming Events HERE</p>
+      <div className='socialDetails'>
+        <h2>Follow Us!</h2>
+        <div className='connectionPortals'>
+          <FaFacebook />
+          <FaInstagramSquare />
+          <FaYoutube />
+          <FaTwitter />
+          <FaTwitch />
+        </div>
       </div>
 
       <div>
