@@ -1,9 +1,9 @@
 import './App.css';
 import theTeam from './Photos/theTeam.jpg'
-import brickfigs from './Photos/bricks&minis.png'
 import batman from './Photos/vacationBatman.jpg'
 import pirates from './Photos/pirates.jpg'
 import superman from './Photos/superman.jpg'
+import brickMini from './Photos/brickMini.png'
 
 import { FaYoutube } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
@@ -15,19 +15,22 @@ import { FaFacebook } from "react-icons/fa";
 
 function App() {
 
+  const highlights = Array.from({ length: 11}, () => null)
+
 
   return (
     <div className="App">
 
       <div className='nav'>
-        <img className='bricksFigs' src={brickfigs} alt='lego' />
-        <h1>Crest Hill, IL</h1>
+        <img className='bricksFigs' src={brickMini} alt='lego' />
+        <h1>- - -</h1>
       </div>
       <div className='banner'>
         <img className='bannerImage' src={batman} alt='Two Storm Troopers' />
       </div>
 
       <div className='storeHours'>
+        <h1>Crest Hill, IL</h1>
         <h2>Store Hours</h2>
         <div className='holidayHours'>
           <h3>Halloween</h3>
@@ -41,7 +44,7 @@ function App() {
         </div>
       </div>
 
-      <button className='contact'>Contact Us!</button>
+      <button className='contactEvent'>Contact Us!</button>
 
       <div className='storeContainer'>
         <div className='infoContainer'>
@@ -60,7 +63,7 @@ function App() {
       </div>
 
 
-      <button className='events'>View Events</button>
+      <button className='contactEvent'>View Events</button>
 
       <div className='socialDetails'>
         <h2>Follow Us!</h2>
@@ -73,8 +76,8 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <p>Copyright Footer</p>
+      <div className='copyright'>
+        <p>@ Copyright Footer</p>
       </div>
 
 

@@ -13,6 +13,7 @@
 .App {
   /* border: 2px solid magenta; */
   width: 100dvw;
+  background-color: whitesmoke;
   /* height: 100dvh; */
   display: flex;
   flex-flow: column nowrap;
@@ -21,14 +22,13 @@
 }
 
 .nav {
-  /* border: 2px solid black; */
   width: 100dvw;
+  height: 7dvh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap: 20px;
-  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); */
   padding-left: 2dvw;
   padding-right: 4dvw;
 }
@@ -43,6 +43,10 @@
   /* border: 2px solid blue; */
   width: 100vw;
   height: 20vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  
 }
 
 .bannerImage {
@@ -61,7 +65,7 @@
 .storeHours {
   /* border: 2px solid red; */
   width: 75%;
-  padding: 3dvh 0 9dvh 0;
+  padding: 3.5dvh 0 9dvh 0;
   gap: 1.5dvh;
 }
 .holidayHours {
@@ -72,9 +76,10 @@
   /* border: 2px solid green; */
 }
 
-.contact {
-  border: 2px solid var(--yellow);
+.contactEvent {
+  border: 1px solid black;
   background-color: var(--yellow);
+  border-radius: 5px;
   width: 40%;
   height: 7dvh;
   margin-top: -3.5dvh;
@@ -82,11 +87,10 @@
   z-index: 10;
   font-size: 2.5dvh;
 }
-
-
-
 .storeContainer {
   background-color: var(--blue);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   width: 100%;
   padding: 9dvh 0 9dvh 0;
   display: flex;
@@ -100,9 +104,15 @@
   position: relative;
   width: 75%;
   height: 24dvh;
-  box-shadow: 0px 0px 15px 4px black;
-}
+  /* border-radius: 40px; */
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 10px;
 
+  .bannerImage {
+    border-radius: 10px;
+  }
+
+}
 .textOverlay {
   background-color: rgba(255, 255, 255, 0.63);
   width: 100%;
@@ -113,25 +123,9 @@
   transform: translate(-50%, -50%);
   font-size: 30px;
 }
-
-
-
-
-.events {
-  border: 2px solid var(--red);
-  background-color: var(--red);
-  width: 40%;
-  height: 7dvh;
-  margin-top: -3.5dvh;
-  margin-bottom: -3.5dvh;
-  z-index: 10;
-  font-size: 2.5dvh;
-  color: #efefef;
-}
-
 .socialDetails {
   width: 100%;
-  background-color: var(--yellow);
+  background-color: whitesmoke;
   height: 30dvh;
   display: flex;
   flex-flow: column nowrap;
@@ -139,7 +133,6 @@
   align-items: center;
   gap: 2dvh;
 }
-
 .connectionPortals {
   display: flex;
   flex-flow: row nowrap;
@@ -147,4 +140,9 @@
   align-items: center;
   gap: 2dvh;
   font-size: 5.5dvh;
+  color: var(--blue)
+}
+
+.copyright {
+  margin: 5dvh 0 10dvh 0;
 }
